@@ -4,4 +4,10 @@ function log(message)
 	console.log(message);
 }
 
+function logError(message)
+{
+	console.logError(message);
+}
+
 module.exports.log = log;
+module.exports.logError = logError;
