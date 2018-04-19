@@ -15,12 +15,21 @@ h1.localisation
 h1.hashtagCompetence
 {
 	color:#FF8000;
-	margin-left: 12%;
+	text-align: center;
 }
 
-div.leftDiv
+td
 {
-	width:30%;
-	margin-left:2%;	
+	vertical-align:top;
+}
 
+div.qualifDiv
+{
+	width:90%;
+	margin-left:10%;	
+	display:inline-block;
+}
+table.hashtagTable
+{
+	width:100%;
 }
