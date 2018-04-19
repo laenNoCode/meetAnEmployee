@@ -11,3 +11,16 @@ h1.localisation
    color: blue;
    text-align: center;
 }
+
+h1.hashtagCompetence
+{
+	color:#FF8000;
+	margin-left: 12%;
+}
+
+div.leftDiv
+{
+	width:30%;
+	margin-left:2%;	
+
+}
