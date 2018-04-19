@@ -16,7 +16,22 @@ function sendFile(url,response)
 		fs.readFile(fileName,(err,data) => 
 		{
 			if(err)		
+			{
+				response.writeHead(404,{ "Content-type" : "text/html; charset=utf-8"});	
+				
+				fs.readFile(("../html/404.html"),
+				 (err2,data2) =>
+				  {
+					if(err2)
+					{
+						logger.log(err2);
+						response.end("error");
+					}
+					else
+						response.end(data2);
+				  });
 				logger.log(err);
+			}
 			else
 			{
 				response.writeHead(200,
