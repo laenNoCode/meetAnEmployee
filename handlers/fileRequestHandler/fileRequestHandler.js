@@ -38,9 +38,10 @@ function adaptContentTypeAndFileName(url, callback)
 		callback("../html" + url + "l", "text/html");
 	else if(url.endsWith(".css"))
 		callback("../css" + url, "text/css");
-	else if(url.endsWith(".jpg'))
-		callback("../jpg" + url, "img/png");
-
+	else if(url.endsWith(".jpg"))
+		callback("../images/jpg" + url, "img/png");
+	else if(url.endsWith("favicon.ico"))
+		callback("../images/favicon","img/png");
 }
 
 // ** module exporting ** //
