@@ -41,7 +41,7 @@ function adaptContentTypeAndFileName(url, callback)
 	else if(url.endsWith(".jpg"))
 		callback("../images/jpg" + url, "img/png");
 	else if(url.endsWith("favicon.ico"))
-		callback("../images/favicon","img/png");
+		callback("../images/favicon/favicon.png","img/png");
 }
 
 // ** module exporting ** //
