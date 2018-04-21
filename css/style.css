@@ -18,15 +18,17 @@ h1.hashtagCompetence
 	text-align: center;
 }
 
+
 td
-{
+{	
 	vertical-align:top;
+	padding-bottom:3em;
 }
 
 div.qualifDiv
 {
 	width:90%;
-	margin-left:10%;	
+	margin-left:5%;	
 	display:inline-block;
 }
 table.hashtagTable
