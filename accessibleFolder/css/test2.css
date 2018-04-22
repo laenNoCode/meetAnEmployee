@@ -1,0 +1,74 @@
+body
+{
+	background-color:222831;
+
+}
+input.greenButton
+{
+	border: 1px;
+	background-color: green;
+	width: 15%;
+	min-width: 200;
+	height: 10%;
+	min-height: 75px;
+	position:fixed;
+	bottom: 0;
+	right: 0;
+}
+
+input.redButton
+{
+	border: 1px;
+	background-color: red;
+	width: 15%;
+	min-width: 200px;
+	height: 10%;
+	min-height: 75px;
+	position:fixed;
+	bottom: 0;
+	left: 0;
+}
+input:hover
+{
+	cursor:pointer;
+}
+
+div.menus
+{
+	margin: 0 auto; 
+	float: left;
+}
+
+a.buttonLink
+{
+	text-decoration:none;
+
+}
+
+.onglet {
+  background: #393e46;
+  background-image: -webkit-linear-gradient(top, #393e46, #2980b9);
+  background-image: -moz-linear-gradient(top, #393e46, #2980b9);
+  background-image: -ms-linear-gradient(top, #393e46, #2980b9);
+  background-image: -o-linear-gradient(top, #393e46, #2980b9);
+  background-image: linear-gradient(to bottom, #393e46, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #eeeeee;
+  border-width: 0px;
+  font-size: 26px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.onglet:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}

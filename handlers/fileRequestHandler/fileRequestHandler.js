@@ -5,7 +5,7 @@
 // ** includes ** //
 var fs = require("fs");
 var logger  = require("./../../LogModule/logger.js");
-
+var ACCESSIBLE_LOCATION = process.env.HOME + "/meetAnEmployee/accessibleFolder";
 // ** functions ** //
 function sendFile(url,response)
 {
@@ -19,7 +19,7 @@ function sendFile(url,response)
 			{
 				response.writeHead(404,{ "Content-type" : "text/html; charset=utf-8"});	
 				
-				fs.readFile(("../html/404.html"),
+				fs.readFile(ACCESSIBLE_LOCATION + ("/html/404.html"),
 				 (err2,data2) =>
 				  {
 					if(err2)
@@ -48,15 +48,15 @@ function adaptContentTypeAndFileName(url, callback)
 {
 	url = url.toLowerCase();
 	if(url.endsWith(".html"))
-		callback("../html" + url, "text/html");
+		callback(ACCESSIBLE_LOCATION + "/html" + url, "text/html");
 	else if(url.endsWith(".htm"))
-		callback("../html" + url + "l", "text/html");
+		callback(ACCESSIBLE_LOCATION + "/html" + url + "l", "text/html");
 	else if(url.endsWith(".css"))
-		callback("../css" + url, "text/css");
+		callback(ACCESSIBLE_LOCATION + "/css" + url, "text/css");
 	else if(url.endsWith(".jpg"))
-		callback("../images/jpg" + url, "img/png");
+		callback(ACCESSIBLE_LOCATION + "/images/jpg" + url, "img/png");
 	else if(url.endsWith("favicon.ico"))
-		callback("../images/favicon/favicon.png","img/png");
+		callback(ACCESSIBLE_LOCATION + "/images/favicon/favicon.png","img/png");
 }
 
 // ** module exporting ** //
